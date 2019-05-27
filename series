@@ -1,0 +1,14 @@
+#include<stdio.h>
+main()
+{int n,i,sum=1,series=0;
+printf("give the value of n");
+scanf("%d",&n);
+
+  for(i=0;i<n;i++)
+  {sum=sum+i;
+  series=series+sum;
+  
+    printf("%d +",sum);
+  }
+  printf("=%d",series);
+}
