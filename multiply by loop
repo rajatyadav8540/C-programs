@@ -1,0 +1,11 @@
+#include<stdio.h>
+main()
+{int m,n,i,mul=0;
+   printf("give value of m and n ");
+   scanf("%d%d",&m,&n);
+   for(i=0;i<m;i++)
+   {mul=mul+n;
+   
+   }
+   printf("multiply of m and n is %d",mul);
+}
