@@ -1,0 +1,28 @@
+#include<stdio.h>
+int ldigit(char a);
+main()
+{ char c;
+int i;
+scanf("%c",&c);
+   i=ldigit(c);
+   switch(i)
+   { case 0: 
+   printf("character is not a digit");
+    break;
+	case 1:
+    	printf("charater is digit");
+      break; 
+   }
+   
+}
+int ldigit(char a)
+{ 
+
+  if(a>='0'&&a<='9')
+  {
+  return 1;
+}
+ else
+   return 0;
+    
+}                 
