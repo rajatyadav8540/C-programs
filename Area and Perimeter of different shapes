@@ -1,0 +1,263 @@
+#include<stdio.h>
+void Square(void);
+void Rectangle(void);
+void Equilateral_Triangle(void);
+void Rightangled_Triangle(void);
+void Circle(void);
+void Parallelogram(void);
+void Rhombus(void);
+void Trapezium(void);
+void Regular_Pentagon(void);
+void Regular_Hexagon(void);
+void main_menu(void);
+main()
+
+
+{ main_menu();
+return 0;
+}
+void main_menu(void)
+{ int n;
+	printf("given are numbers for different shapes :\n1.Squqre \n2.Rectangle \n3.Equilateral Triangle \n4.Right angled  Triangle \n5.Circle \n6.Parallelogram \n7.Rhombus \n8.Trapezium \n9.Regular Pentagon \n10.Regular Hexagon");
+	scanf("%d",&n);
+	switch(n)
+{
+		case 1 : 
+	         Square();
+	          break;
+	case 2: Rectangle();
+	         break;
+	case 3: Equilateral_Triangle();
+	         break;
+	case 4: Rightangled_Triangle();
+	         break;
+	case 5:	Circle();
+	         break;
+	case 6: Parallelogram();
+	         break;
+	case 7: Rhombus();
+             break;
+	case 8: Trapezium();
+	         break;
+	case 9: Regular_Pentagon();
+	         break;
+	case 10: Regular_Hexagon();
+	         break;
+	
+	default : printf("you entered wrong number");
+	    main_menu();     break;
+}}
+ void Equilateral_Triangle(void)
+ { int i,j,a,p;
+       printf(" \n\n      EQUILATERAL TRIANGLE");
+  printf("\n\n1.Perimeter and Area \n 2.Main menu");
+  scanf("%d",&i);
+  switch(i)
+     {
+	 case 1: 
+          printf("\nGive side of Equilateral Triangle\n");
+           scanf("%d",&j);
+            a=1.732*j*j/4;
+            p=3*j;
+            printf("\nPerimeter is :%d \n Area is :%d\n\n\n\n\n",p,a);
+            
+        default: main_menu();
+			        break; 
+ }
+ 
+  
+ }
+ 
+ 
+ 
+void Square(void)
+{int i,j,a,p;
+  printf("\n\n         SQUARE");
+   printf("\n\n1. Perimeter and Area \n 2.Main menu");
+  scanf("%d",&i);
+  switch(i)
+     {
+	 case 1: 
+          printf("Give side of Square \n");
+           scanf("%d",&j);
+            a=j*j;
+            p=4*j;
+            printf("Perimeter is :%d \n Area is :%d \n\n\n\n\n\n\n",p,a);
+            
+        default: main_menu();
+			        break;
+}}
+
+void Rectangle(void)
+{int i,j,a,p,n;
+  printf("\n\n         RECTANGLE");
+   printf("\n\n1. Perimeter and Area \n 2.Main menu \n");
+  scanf("%d",&n);
+  switch(n)
+     {
+	 case 1: 
+          printf("Length");
+           scanf("%d",&i); 
+           printf("Width");
+           scanf("%d",&j);
+           
+            a=i*j;                                                                                                      
+            p=2*(i+j);
+            printf(" \nPerimeter is :%d \n Area is :%d \n\n\n\n\n",p,a);
+            
+        default: main_menu();
+			        break;
+}}
+void Rightangled_Triangle(void)
+{int i,j,a,p,n,k;
+  printf("\n\n        RIGHT ANGLED TRIANGLE");
+   printf("\n\n1. Perimeter and Area \n 2.Main menu \n");
+  scanf("%d",&n);
+  switch(n)
+     {
+	 case 1: 
+          printf("Base");
+          scanf("%d\n",&i);
+          printf("Height");
+          scanf("%d\n",&j);
+          printf("Hypotenuse");
+          scanf("%d\n",&k);
+          a=i*j/2;
+          p=i+j+k;
+          
+            printf(" \nPerimeter is :%d \n Area is :%d \n\n\n\n\n",p,a);
+            
+        default: main_menu();
+			        break;
+}}
+
+
+
+void Circle(void)
+{int i,j,a,p;
+  printf("\n\n         CIRCLE");
+   printf("\n\n1. Perimeter and Area \n 2.Main menu");
+  scanf("%d",&i);
+  switch(i)
+     {
+	 case 1: 
+          printf("Give side of Square \n");
+           scanf("%d",&j);
+            a=3.14*j*j;
+            p=2*3.14*j;
+            printf("Perimeter is :%d \n Area is :%d \n\n\n\n\n\n\n",p,a);
+            
+        default: main_menu();
+			        break;
+}}
+
+void Parallelogram(void)
+{int i,j,a,p,n,k;
+  printf("\n\n        PARALLELOGRAM");
+   printf("\n\n1. Perimeter and Area \n 2.Main menu \n");
+  scanf("%d",&n);
+  switch(n)
+     {
+	 case 1: 
+          printf("Base");
+          scanf("%d\n",&i);
+          printf("Height");
+          scanf("%d\n",&j);
+          printf("Another adjacent side");
+          scanf("%d\n",&k);
+          a=i*j;
+          p=i+j+k;
+          
+            printf(" \nPerimeter is :%d \n Area is :%d \n\n\n\n\n",p,a);
+            
+        default: main_menu();
+			        break;
+}}
+
+
+void Rhombus(void)
+{int i,j,a,p,n,k;
+  printf("\n\n        RHOMBUS");
+   printf("\n\n1. Perimeter and Area \n 2.Main menu \n");
+  scanf("%d",&n);
+  switch(n)
+     {
+	 case 1: 
+          printf("Base");
+          scanf("%d\n",&i);
+          printf("Height");
+          scanf("%d\n",&j);
+          printf("Another adjacent side");
+          scanf("%d\n",&k);
+          a=i*j;
+          p=i+j+k;
+          
+            printf(" \nPerimeter is :%d \n Area is :%d \n\n\n\n\n",p,a);
+            
+        default: main_menu();
+			        break;
+}}
+
+
+void Trapezium(void)
+{int i,j,a,p,n,k,l,h;
+  printf("\n\n        TRAPEZIUM");
+   printf("\n\n1. Perimeter and Area \n 2.Main menu \n");
+  scanf("%d",&n);
+  switch(n)
+     {
+	 case 1: 
+          printf("give two parallel sides");
+          scanf("%d%d\n",&i,&j);
+          printf("Height");
+          scanf("%d\n",&h);
+          printf("Another non parallel sides side");
+          scanf("%d%d\n",&k,&l);
+          a=h*(i+j)/2;
+          p=i+j+k+l;
+          
+            printf(" \nPerimeter is :%d \n Area is :%d \n\n\n\n\n",p,a);
+            
+        default: main_menu();
+			        break;
+}}
+
+
+void Regular_Hexagon(void)
+{int i,j,a,p;
+  printf("\n\n         REGULAR HEXAGON");
+   printf("\n\n1. Perimeter and Area \n 2.Main menu");
+  scanf("%d",&i);
+  switch(i)
+     {
+	 case 1: 
+          printf("Give side of Hexagon \n");
+           scanf("%d",&j);
+            a=2.6*j*j;
+            p=6*j;
+            printf("Perimeter is :%d \n Area is :%d \n\n\n\n\n\n\n",p,a);
+            
+        default: main_menu();
+			        break;
+}}
+
+
+void Regular_Pentagon(void)
+{int i,j,a,p,n;
+  printf("\n\n         REGULAR PENTAGON");
+   printf("\n\n1. Perimeter and Area \n 2.Main menu \n");
+  scanf("%d",&n);
+  switch(n)
+     {
+	 case 1: 
+          printf("Side");
+           scanf("%d",&i); 
+           printf("Apothem");
+           scanf("%d",&j);
+           
+            a=2.5*i*j;                                                                                                      
+            p=5*i;
+            printf(" \nPerimeter is :%d \n Area is :%d \n\n\n\n\n",p,a);
+            
+        default: main_menu();
+			        break;}}
